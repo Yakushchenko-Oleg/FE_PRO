@@ -1,0 +1,72 @@
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-family: 'Dosis', sans-serif;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    display: inline;
+}
+
+nav,
+ul,
+li {
+    display: inline-block;
+    height: 50px;
+}
+
+nav button {
+    /* position: absolute;
+    right: 0; */
+}
+
+.header {
+    display: flex;
+    padding: 50px 0px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header__logo {
+    width: 56px;
+    height: 50px;
+    margin-right: 295px; /* В Фигме не указан отступ слева до лого а только margin справа до первого пункта из списка*/
+}
+
+.nav-list {}
+
+.header__item {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 25px;
+
+}
+
+.header__item_vioiet {
+    color: #9A93FF;
+    margin-left: 0;
+}
+
+.header__btn {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 999px;
+    background: #ADA7FF;
+    margin-left: 295px; /* В Фигме не указан отступ справа до кнопки а только margin слева от последнего пункта из списка*/
+    padding: 16px 32px;
+
+}
