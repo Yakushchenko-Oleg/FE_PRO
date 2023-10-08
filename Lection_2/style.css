@@ -13,26 +13,18 @@ button {
     cursor: pointer;
 }
 
-nav {
-    display: inline;
-}
-
-nav,
-ul,
 li {
-    display: inline-block;
-    height: 50px;
+    display: inline-block; 
 }
-
-nav button {
-    /* position: absolute;
-    right: 0; */
+nav,
+ul{
+     height: 50px;
 }
 
 .header {
+    padding: 50px 134px;
     display: flex;
-    padding: 50px 0px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -40,10 +32,13 @@ nav button {
 .header__logo {
     width: 56px;
     height: 50px;
-    margin-right: 295px; /* В Фигме не указан отступ слева до лого а только margin справа до первого пункта из списка*/
 }
 
-.nav-list {}
+.nav-list {
+    display: flex;
+    align-items: center;
+
+}
 
 .header__item {
     color: #000;
@@ -51,7 +46,6 @@ nav button {
     font-weight: 600;
     line-height: normal;
     margin-left: 25px;
-
 }
 
 .header__item_vioiet {
@@ -63,10 +57,123 @@ nav button {
     color: #FFF;
     font-size: 18px;
     font-weight: 600;
-    line-height: normal;
     border-radius: 999px;
     background: #ADA7FF;
-    margin-left: 295px; /* В Фигме не указан отступ справа до кнопки а только margin слева от последнего пункта из списка*/
     padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__main-container-image {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 0;
+}
+
+.section__main-conrainer {
+    margin: 60px 134px 27px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.section__info-conteiner {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    z-index: 20;
+    max-width: 700px;
+
+}
+
+.section__title {
+    color: #302B3A;
+    font-size: 69px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.section__good {
+    color: #ADA7FF;
+}
+
+.section__paragraph {
+    max-width: 625px;
+    color: #404040;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.section__info-conteiner>div {
+    padding-top: 60px;
+}
+
+.section__btn-cont {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.section__btn_left {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 999px;
+    background: #ADA7FF;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__btn_left>img {
+    width: 17px;
+    height: 19px;
+    margin-left: 10px;
+
+}
+
+.section__btn-WatchVideo-cont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.section__btn-WatchVideo-cont>p {
+    margin-left: 10px;
+    color: #ADA7FF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section__promo {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.section__promo-card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 65px;
+}
+
+.section__promo__top-text {
+    color: #302B3A;
+    font-size: 43px;
+    font-weight: 650;
+}
+
+.section__promo__bottom-text {
+    color: #686868;
+    font-size: 18px;
+    font-weight: 600;
 }
