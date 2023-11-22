@@ -1,0 +1,269 @@
+:root{
+    --dark-main-bg-color: #151718;
+    --dark-form-bg-color: #2D2F30;
+    --dark-grey-input-bg-color: #414344;
+    --midle-grey-color: #676767;    
+    --light-grey-color: #E3E1E1;
+    --light-bg-color: #FBFAFA;    
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+button{
+    border: none;
+}
+
+.main{
+    display: inline-block;
+}
+.header{
+    height: 90px;
+    background-color: var(--dark-main-bg-color);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.changeThemeBtn {
+width: 110px;
+height: 50px;
+border-radius: 50px;
+margin-right: 50px;
+background-color: #2D2F30;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 5px;
+}
+.changeThemeBtn > img{
+    height: 20px;
+    margin-left: 6px;
+}
+
+.toggleImgCont{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: #151718;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.formContainer{
+    display: inline-block;
+    background-color: var(--dark-main-bg-color);
+    padding: 103px 133px;
+    
+}
+.registrForm{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 24px 42px 60px;
+    background-color: var(--dark-form-bg-color);
+    border-radius: 10px;
+}
+.form__title{
+    color:  #FBFAFA;    
+    font-size: 25px;
+    font-weight: 700;
+}
+.fa-brands{
+   color:  #FBFAFA;    
+}
+
+.form__titlecont{
+    display: flex;
+    justify-content: space-between;
+}
+.form__linksContainer > a {
+    color: #FCFCFC;
+    text-decoration: none;
+    height: 20px;
+    margin-left: 19px;
+}
+.form__titlePar{
+    color: #F6F6F6;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 17px 0;
+}
+.form__undercore{
+    width: 370px;
+    height: 1px;
+    border: none;
+    background: #151718;
+    margin-bottom: 9px;   
+}
+.registrForm > label{
+    color:#B0B0B0;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 18px 0;
+}
+.registrForm > input{
+    width: 367px;
+    height: 60px;
+    border-radius: 4px;
+    background: var(--dark-grey-input-bg-color);
+    border: none;
+    padding-left: 23px;
+}
+.registrForm > input::placeholder{
+    color: #151718;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* ------------ Checkbox styles ------------- */
+.form__checkboxContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 50px 0 43px;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .form__checkboxContainer .form__checkboxInput{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .form__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #FCFCFC;
+      border-radius: 50px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .form__checkboxContainer:hover .form__checkboxInput ~ .form__checkmark {
+    background-color: #ccc;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .form__checkboxContainer .form__checkboxInput:checked ~ .form__checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .form__checkboxContainer .form__checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #2D2F30;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);  
+
+  }
+/* --------------------------------- */
+.form__checkboxContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.form__checkboxLabel{
+
+font-size: 16px;
+font-weight: 400;
+color: #B0B0B0;
+
+}
+.Form__link{
+    color: #2D76E2;
+
+}
+.form__submitButton{
+Size: 16px;
+height: 60px;
+font-size: 16px;
+font-weight: 700;
+line-height: 19px;
+border-radius: 4px;
+color: #FCFCFC;
+background: #2D76E2;
+}
+
+.light-theme .header{
+    background-color: var(--light-bg-color);
+}
+.light-theme .changeThemeBtn {
+    background-color: #F6F6F6;
+}
+.light-theme .toggleImgCont{
+    
+background-color:#FCFCFC;
+}
+.light-theme .formContainer{
+    background-color: var(--light-bg-color);
+}
+.light-theme .registrForm{
+    background-color: var(--light-bg-color);
+}
+.light-theme .form__title {
+    color: var(--dark-grey-input-bg-color);
+}
+.light-theme .fa-brands  {
+    color: var(--dark-grey-input-bg-color);
+}
+.light-theme .form__titlePar{
+    color: var(--midle-grey-color);
+}
+.light-theme .form__undercore{
+    background: var(--light-grey-color);
+}
+.light-theme .registrForm > label{
+    color: var(--dark-grey-input-bg-color);
+}
+.light-theme .registrForm > input{
+    background-color: var(--light-bg-color);
+    border: 1px solid var(--light-grey-color);
+}
+.light-theme .registrForm > ::placeholder {
+    color: var(--light-grey-color);
+}
+.light-theme .form__checkmark{
+    background-color: #B0B0B0;
+}
+.light-them.form__checkboxLabel{
+    color: var(--midle-grey-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
