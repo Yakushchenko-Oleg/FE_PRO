@@ -1,5 +1,3 @@
-Дорый день Предлогаю свое решение, к сожалению оно не работает но чтоб найти проблему у меня не хватило времени
-На занятии я постараюсь исправить ее и внесу изменения
 
 let addProductBtn = document.querySelector('.addProductBtn')
 
@@ -11,7 +9,7 @@ function AddNewProduct() {
     let price = document.querySelector('.priceInput').value
     newProduct.push(id, title, image, price)
 
-  
     products.push(newProduct)
+    createProducts()
 }
 addProductBtn.onclick = () => AddNewProduct()
