@@ -1,0 +1,16 @@
+Дорый день Предлогаю свое решение, к сожалению оно не работает но чтоб найти проблему у меня не хватило времени
+
+let addProductBtn = document.querySelector('.addProductBtn')
+
+function AddNewProduct() {
+    let newProduct = []
+    let id = Date.now()
+    let title = document.querySelector('.titleInput').value
+    let image = document.querySelector('.imageInput').value
+    let price = document.querySelector('.priceInput').value
+    newProduct.push(id, title, image, price)
+
+  
+    products.push(newProduct)
+}
+addProductBtn.onclick = () => AddNewProduct()
