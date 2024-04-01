@@ -44,7 +44,12 @@ function renderContacts(contacts) {
 function filterContacts(event) {
   let elem = event.target.value
   // console.log(elem)
-  users = users.filter(user => user.name.first.includes(elem) || user.name.last.includes(elem) )
+  users = users.filter(user => 
+    user.name.first.includes(elem.toLowerCase()) || 
+    user.name.first.includes(elem.toLowerCase()) || 
+    user.name.last.includes(elem.toLowerCase()) ||
+    user.name.last.includes(elem.toLowerCase()) 
+     )
   renderContacts(users)
 }
 
@@ -57,8 +62,3 @@ const render = async () => {
 render()
 
 surchInput.addEventListener("keyup",  (event) => filterContacts(event) )
-
-
-
-
-
