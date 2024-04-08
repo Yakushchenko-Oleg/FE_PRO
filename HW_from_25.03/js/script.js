@@ -43,14 +43,14 @@ function renderContacts(contacts) {
 
 function filterContacts(event) {
   let elem = event.target.value
-  // console.log(elem)
-  users = users.filter(user => 
-    user.name.first.includes(elem.toLowerCase()) || 
-    user.name.first.includes(elem.toLowerCase()) || 
-    user.name.last.includes(elem.toLowerCase()) ||
-    user.name.last.includes(elem.toLowerCase()) 
-     )
-  renderContacts(users)
+  console.log(elem)
+  let filtredUsers = users.filter(user => 
+    user.name.first.toLowerCase().includes(elem) || 
+    user.name.first.toUpperCase().includes(elem) || 
+    user.name.last.toLowerCase().includes(elem) ||
+    user.name.last.toUpperCase().includes(elem) 
+    )
+  renderContacts(filtredUsers)
 }
 
 const render = async () => {
